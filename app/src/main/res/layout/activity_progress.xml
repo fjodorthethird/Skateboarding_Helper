@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ProgressActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        />
+
+    <Button
+        android:id="@+id/button_progress_1"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25sp"
+        android:background="@drawable/buttonstyle"
+        android:onClick="onClick"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="Ollie"
+        android:textSize="17sp"
+         />
+
+    <Button
+        android:id="@+id/button_progress_2"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/button_progress_1"
+        android:layout_marginTop="65sp"
+        android:background="@drawable/buttonstyle"
+        android:onClick="onClick"
+        android:paddingLeft="15sp"
+        android:paddingRight="15sp"
+        android:text="Backside 180"
+        android:textSize="17sp"
+        android:layout_marginLeft="15sp"
+         />
+
+
+    <Button
+        android:id="@+id/button_progress_3"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/button_progress_1"
+        android:layout_marginTop="65sp"
+        android:background="@drawable/buttonstyle"
+        android:onClick="onClick"
+        android:paddingLeft="15sp"
+        android:paddingRight="15sp"
+        android:layout_marginLeft="270sp"
+        android:text="Fakie Ollie"
+        android:textSize="17sp"
+         />
+
+
+    <Button
+        android:id="@+id/button_progress_4"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/button_progress_3"
+        android:layout_marginTop="65sp"
+        android:background="@drawable/buttonstyle"
+        android:onClick="onClick"
+        android:paddingLeft="15sp"
+        android:paddingRight="15sp"
+        android:layout_marginLeft="15sp"
+        android:text="Frontside 180"
+        android:textSize="17sp"
+         />
+
+
+
+    <Button
+        android:id="@+id/button_progress_5"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/button_progress_3"
+        android:layout_marginLeft="270sp"
+        android:background="@drawable/buttonstyle"
+        android:onClick="onClick"
+        android:paddingLeft="15sp"
+        android:layout_marginTop="65sp"
+        android:paddingRight="15sp"
+        android:text="Nollie"
+        android:textSize="17sp"
+         />
+
+    <Button
+        android:id="@+id/button_progress_6"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/button_progress_4"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttonstyle"
+        android:onClick="onClick"
+        android:layout_marginTop="65sp"
+        android:paddingLeft="15sp"
+        android:paddingRight="15sp"
+        android:text="Shove-it"
+        android:textSize="17sp"
+         />
+
+    <Button
+    android:id="@+id/button_progress_7"
+    android:layout_width="125dp"
+    android:layout_height="50dp"
+    android:layout_below="@+id/button_progress_6"
+    android:layout_marginTop="65sp"
+    android:layout_marginLeft="270sp"
+    android:background="@drawable/buttonstyle"
+    android:onClick="onClick"
+    android:paddingLeft="15sp"
+    android:paddingRight="15sp"
+    android:text="Pop Shove-it"
+    android:textSize="17sp"
+     />
+
+    <Button
+        android:id="@+id/button_progress_8"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/button_progress_7"
+        android:layout_marginTop="65sp"
+        android:background="@drawable/buttonstyle"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClick"
+        android:paddingLeft="15sp"
+        android:paddingRight="15sp"
+        android:text="Fakie Bigspin"
+        android:textSize="17sp"
+         />
+
+    <Button
+        android:id="@+id/button_progress_9"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/button_progress_6"
+        android:layout_marginTop="65sp"
+        android:layout_marginLeft="15sp"
+        android:background="@drawable/buttonstyle"
+        android:onClick="onClick"
+        android:paddingLeft="15sp"
+        android:paddingRight="15sp"
+        android:text="Fakie Shove-it"
+        android:textSize="17sp"
+        />
+
+    <ImageView
+        android:id="@+id/ic_pointer6"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/button_progress_6"
+        android:layout_marginTop="15sp"
+        android:layout_marginLeft="80sp"
+        android:background="@drawable/ic_pointer"
+        android:rotation="315" />
+
+    <ImageView
+        android:id="@+id/ic_pointer5"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/button_progress_6"
+        android:layout_marginTop="15sp"
+        android:layout_marginLeft="270sp"
+        android:background="@drawable/ic_pointer"
+        android:rotation="225" />
+
+    <ImageView
+        android:id="@+id/ic_pointer4"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/button_progress_4"
+        android:layout_marginTop="15sp"
+        android:layout_marginLeft="80sp"
+        android:background="@drawable/ic_pointer"
+        android:rotation="225" />
+
+    <ImageView
+        android:id="@+id/ic_pointer3"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15sp"
+        android:layout_below="@id/button_progress_5"
+        android:layout_marginLeft="270sp"
+        android:background="@drawable/ic_pointer"
+        android:rotation="315" />
+
+    <ImageView
+        android:id="@+id/ic_pointer1"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/button_progress_1"
+        android:layout_marginLeft="80sp"
+        android:layout_marginTop="15sp"
+        android:background="@drawable/ic_pointer"
+        android:rotation="315" />
+
+    <ImageView
+        android:id="@+id/ic_pointer2"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/button_progress_1"
+        android:layout_marginLeft="270sp"
+        android:layout_marginTop="15sp"
+        android:background="@drawable/ic_pointer"
+        android:rotation="225" />
+
+    <ImageView
+        android:id="@+id/ic_pointer11"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/button_progress_2"
+        android:layout_marginLeft="45sp"
+        android:layout_marginTop="15sp"
+        android:background="@drawable/ic_pointer"
+        android:rotation="270" />
+
+    <ImageView
+        android:id="@+id/ic_pointer10"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/button_progress_3"
+        android:layout_marginLeft="305sp"
+        android:layout_marginTop="15sp"
+        android:background="@drawable/ic_pointer"
+        android:rotation="270" />
+
+    <ImageView
+        android:id="@+id/ic_pointer8"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/button_progress_9"
+        android:layout_marginTop="15sp"
+        android:layout_marginLeft="270sp"
+        android:background="@drawable/ic_pointer"
+        android:rotation="315" />
+
+    <ImageView
+        android:id="@+id/ic_pointer7"
+        android:layout_below="@id/button_progress_9"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15sp"
+        android:layout_marginLeft="80sp"
+        android:background="@drawable/ic_pointer"
+        android:rotation="225" />
+
+
+
+</RelativeLayout>
+</ScrollView>

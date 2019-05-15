@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "447202943799",
+    "firebase_url": "https://skateboardinghelper.firebaseio.com",
+    "project_id": "skateboardinghelper",
+    "storage_bucket": "skateboardinghelper.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:447202943799:android:c85854e1c422e5cd",
+        "android_client_info": {
+          "package_name": "cz.zelgadiss.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "447202943799-vap9rc2nl1it5dpq3spl85lj3u8tajvr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "cz.zelgadiss.myapplication",
+            "certificate_hash": "85f7a2d69018aa2f851b14181e35181fafe84519"
+          }
+        },
+        {
+          "client_id": "447202943799-jiau87gu8egjjtfouqelump04fhl5bdc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCk-1NW5RT076lC0FJ41bMVv6nMDAV6_vg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "447202943799-jiau87gu8egjjtfouqelump04fhl5bdc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

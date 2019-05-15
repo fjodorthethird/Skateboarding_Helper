@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="action_settings">Настройки</string>
+    <string name="action_about">О приложении</string>
+    <string name="action_home">Домой</string>
+    <string name="action_profile">Профиль</string>
+    <string name="title_profile">SkateBoarding\nHelper</string>
+    <string name="title_activity_main">Skateboarding\n\t\t\t\t\t\t\t\t\t\t\tHelper</string>
+    <string name="text_activity_menu_about"> Приложение <b>Skateboarding Helper</b> сделано для всех увлекающихся скейтбордингом.
+    Оно призвано облегчить процесс обучения новым трюкам и всячески способствовать прогрессу.\n\n
+        Приложение сделано Федором Ельчаниновым в рамках итогового проекта школы программирования <b>IT School Samsung</b></string>
+    <string name="title_activity_menu_about">О приложении</string>
+    <string name="ic_about_samsung">ic_about_samsung</string>
+    <string name="switch_activity_menu_settings">Ночной режим</string>
+    <string name="login_activity_login">Login</string>
+    <string name="password_activity_login">Password</string>
+    <string name="button_withoutregister">Вход без регистрации</string>
+    <string name="button_register">Регистрация</string>
+    <string name="button_doregister">Зарегистрироваться</string>
+    <string name="button_choice">ИЛИ</string>
+    <string name="button_enter">Вход</string>
+    <string name="password_repeat">Repeat password</string>
+    <string name="main_ency_title">Энциклопедия</string>
+    <string name="main_your_progress_title">Ваш прогресс</string>
+    <string name="main_game_of_skate_title">Game of S.K.A.T.E</string>
+    <string name="ency_search">Поиск</string>
+    <string name="text_menu_logout">Выйти</string>
+    <string name="name_profile">Имя</string>
+    <string name="surname_profile">Фамилия</string>
+    <string name="country_profile">Страна</string>
+    <string name="text_profile_advice">Нажмите на изображение слева, чтобы выбрать картинку для Вашего профиля:</string>
+    <string name="button_save">Применить изменения</string>
+    <string name="email_profile">Почта:</string>
+    <string name="action_auth">Авторизация</string>
+    <string name="button_logout">Выйти из учетной записи</string>
+</resources>

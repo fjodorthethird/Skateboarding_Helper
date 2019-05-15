@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundcolor">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <io.ghyeok.stickyswitch.widget.StickySwitch
+        android:id="@+id/sticky_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        app:ss_animationDuration="600"
+        app:ss_animationType="line"
+        app:ss_iconPadding="18dp"
+        app:ss_iconSize="22dp"
+        app:ss_leftIcon="@drawable/ic_wb_sunny_black_24dp"
+        app:ss_leftText="Light"
+        app:ss_rightIcon="@drawable/ic_brightness_3_black_24dp"
+        app:ss_rightText="Dark"
+        app:ss_selectedTextSize="15sp"
+        app:ss_sliderBackgroundColor="@color/colorGray"
+        app:ss_switchColor="@color/colorSwitchColor"
+        app:ss_textColor="?attr/textcolor"
+        app:ss_textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:padding="20dp"
+        android:text="@string/switch_activity_menu_settings"
+        android:textColor="?attr/textcolor"
+        android:textSize="19sp"
+         />
+
+    <Button
+        android:id="@+id/buttonLogout"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/buttonstyle"
+        android:paddingLeft="35dp"
+        android:onClick="onClick"
+        android:paddingRight="35dp"
+        android:text="@string/button_logout"
+        android:textColor="?attr/textcolor"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="82dp" />
+
+</RelativeLayout>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".GameActivity">
+
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        />
+
+
+    <EditText
+        android:padding="10dp"
+        android:textStyle="italic"
+        android:id="@+id/edit_name_player1"
+        android:layout_toLeftOf="@id/edit_points_player1"
+        android:layout_marginRight="5dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="15dp"
+        android:text="Player1"/>
+
+    <EditText
+        android:padding="10dp"
+        android:textStyle="italic"
+        android:id="@+id/edit_name_player2"
+        android:layout_width="100dp"
+        android:layout_toLeftOf="@id/edit_points_player2"
+        android:layout_marginRight="5dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/edit_name_player1"
+        android:layout_marginTop="30dp"
+        android:text="Player2"/>
+
+
+    <EditText
+        android:id="@+id/edit_points_player1"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/banco"
+        android:hint="S K A T E"
+        android:padding="10dp"
+        android:clickable="false"
+        android:textStyle="bold"
+
+        android:textSize="30sp"/>
+
+
+    <ImageView
+        android:id="@+id/ic_decrease_player1"
+        android:layout_toRightOf="@id/edit_points_player1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_letter_left_black_24dp"
+        android:background="@drawable/textviewstyle"
+        android:padding="5dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        />
+
+    <ImageView
+        android:id="@+id/ic_increase_player1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@id/ic_decrease_player1"
+        android:src="@drawable/ic_letter_right_black_24dp"
+        android:background="@drawable/textviewstyle"
+        android:padding="5dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <EditText
+        android:id="@+id/edit_points_player2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_points_player1"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/banco"
+        android:padding="10dp"
+        android:hint="S K A T E"
+        android:clickable="false"
+        android:textStyle="bold"
+        android:textSize="30sp"/>
+
+    <ImageView
+        android:id="@+id/ic_decrease_player2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_letter_left_black_24dp"
+        android:background="@drawable/textviewstyle"
+        android:padding="5dp"
+        android:layout_toRightOf="@id/edit_points_player2"
+        android:layout_below="@+id/edit_points_player1"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="5dp"
+        />
+
+    <ImageView
+        android:id="@+id/ic_increase_player2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_letter_right_black_24dp"
+        android:background="@drawable/textviewstyle"
+        android:padding="5dp"
+        android:layout_toRightOf="@id/ic_decrease_player2"
+        android:layout_below="@+id/edit_points_player1"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/dice_1"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:background="@drawable/dicestyle"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginLeft="100dp"
+        android:layout_below="@+id/edit_points_player2"/>
+
+    <TextView
+        android:id="@+id/dice_2"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:textStyle="bold"
+        android:textColor="?attr/textcolor"
+        android:background="@drawable/dicestyle"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="230dp"
+        android:layout_below="@+id/edit_points_player2"/>
+
+    <TextView
+        android:id="@+id/dice_3"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="100dp"
+        android:background="@drawable/dicestyle"
+        android:layout_marginTop="35dp"
+        android:textColor="?attr/textcolor"
+        android:layout_below="@+id/dice_1"/>
+
+    <TextView
+        android:id="@+id/dice_4"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:textStyle="bold"
+        android:background="@drawable/dicestyle"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="230dp"
+        android:textColor="?attr/textcolor"
+        android:layout_below="@+id/dice_2"/>
+
+    <Button
+        android:id="@+id/button_roll"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/dice_4"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttonstyle"
+        android:onClick="onClick"
+        android:paddingLeft="15sp"
+        android:paddingRight="15sp"
+        android:textColor="?attr/textcolor"
+        android:text="Крутить"
+        android:textSize="17sp"
+        />
+
+    <TextView
+        android:id="@+id/random_trick"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:padding="5dp"
+        android:layout_below="@id/button_roll"
+        android:layout_marginTop="50dp"
+        android:text="Random Trick"
+        android:background="@drawable/textviewstyle"
+        android:textColor="?attr/textcolor"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/ency_icon"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:padding="5dp"
+        android:onClick="onClick"
+        android:layout_marginHorizontal="10dp"
+        android:background="@drawable/textviewstyle"
+        android:layout_below="@id/button_roll"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@id/random_trick"
+        android:src="@drawable/ic_book_black_24dp"/>
+
+
+</RelativeLayout>
+
+</ScrollView>
