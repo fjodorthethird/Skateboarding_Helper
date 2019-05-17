@@ -106,10 +106,12 @@ public class MainActivity extends AppCompatActivity   {
                     case R.id.button_activity_main_yourprogress:
                         Intent intent_progress = new Intent(MainActivity.this, ProgressActivity.class);
                         startActivity(intent_progress);
+                        break;
 
                     case R.id.button_activity_main_gameofskate:
                         Intent intent_game = new Intent(MainActivity.this, GameActivity.class);
                         startActivity(intent_game);
+                        break;
 
 
 
@@ -127,7 +129,7 @@ public class MainActivity extends AppCompatActivity   {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
 
-                        finish();
+                        finishAffinity();
 
                     }
 

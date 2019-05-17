@@ -30,8 +30,7 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
     private EditText ETemail;
     private EditText ETpassword;
     private EditText ETpassword_repeat;
-    public ImageView IVeye_password;
-    public ImageView IVeye_password_repeat;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,8 +57,6 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
         ETemail = (EditText) findViewById(R.id.login);
         ETpassword = (EditText) findViewById(R.id.password);
         ETpassword_repeat = (EditText) findViewById(R.id.password_repeat);
-        IVeye_password = (ImageView) findViewById(R.id.ic_password_eye);
-        IVeye_password_repeat = (ImageView) findViewById(R.id.ic_password_repeat_eye);
 
         findViewById(R.id.button_register).setOnClickListener(this);
     }

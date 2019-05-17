@@ -112,27 +112,6 @@
         android:textColor="@color/colorBlack"
         android:textSize="14sp" />
 
-    <ImageView
-        android:id="@+id/ic_password_eye"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/login"
-        android:layout_marginLeft="7dp"
 
-        android:layout_marginTop="35dp"
-        android:layout_toRightOf="@+id/password"
-        app:srcCompat="@drawable/ic_closed_eye_black"/>
-
-    <ImageView
-        android:id="@+id/ic_password_repeat_eye"
-        android:onClick="onClick"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/password"
-        android:layout_marginLeft="7dp"
-        android:layout_marginTop="35dp"
-        android:layout_toRightOf="@+id/password"
-
-        app:srcCompat="@drawable/ic_closed_eye_black" />
 
 </RelativeLayout>

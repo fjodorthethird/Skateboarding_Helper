@@ -71,9 +71,6 @@ public class EncyActivity extends AppCompatActivity {
         } else
             setTheme(R.style.AppTheme);
 
-        Intent intent = getIntent();
-        String str = intent.getStringExtra("trickname");
-        editSearch.setText(str);
 
 
         editSearch.addTextChangedListener(new TextWatcher() {
@@ -111,6 +108,14 @@ public class EncyActivity extends AppCompatActivity {
                         }
                         AdapterClass adapterClass =  new AdapterClass(list);
                         recyclerView.setAdapter(adapterClass);
+                        if(getIntent().getExtras() != null) {
+
+                            Intent intent = getIntent();
+                            String str = intent.getStringExtra("trickname");
+                            editSearch.setText(str);
+                            search(str);
+
+                        }
 
                     }
                 }

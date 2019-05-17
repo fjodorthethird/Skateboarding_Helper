@@ -1,6 +1,10 @@
 package cz.zelgadiss.myapplication;
 
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.Drawable;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatDelegate;
@@ -25,10 +29,10 @@ public class ProgressActivity extends AppCompatActivity {
     Button button7;
     Button button8;
     Button button9;
-
+    String dialogChoice[] = {"Посмотреть в энциклопедии", "Сделано"};
     FirebaseAuth mAuth;
     FirebaseUser currentUser;
-
+    Drawable done;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,7 +54,15 @@ public class ProgressActivity extends AppCompatActivity {
 
 
 
-
+        button1 = findViewById(R.id.button_progress_1);
+        button2 = findViewById(R.id.button_progress_2);
+        button3 = findViewById(R.id.button_progress_3);
+        button4 = findViewById(R.id.button_progress_4);
+        button5 = findViewById(R.id.button_progress_5);
+        button6 = findViewById(R.id.button_progress_6);
+        button7 = findViewById(R.id.button_progress_7);
+        button8 = findViewById(R.id.button_progress_8);
+        button9 = findViewById(R.id.button_progress_9);
     }
 
     public void onClick(View view) {
@@ -58,58 +70,240 @@ public class ProgressActivity extends AppCompatActivity {
         switch (view.getId()){
 
             case R.id.button_progress_1:
-                button1 = findViewById(R.id.button_progress_1);
-                Intent intent1 = new Intent(ProgressActivity.this, EncyActivity.class);
-                intent1.putExtra("trickname", button1.getText().toString());
-                startActivity(intent1);
+                new AlertDialog.Builder(this)
+                        .setIcon(android.R.drawable.ic_dialog_alert)
+                        .setTitle("Выберите действие")
+
+                        .setItems(dialogChoice, new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                switch (which){
+                                    case 0:
+                                        Intent intent1 = new Intent(ProgressActivity.this, EncyActivity.class);
+                                        intent1.putExtra("trickname", button1.getText().toString());
+                                        startActivity(intent1);
+                                        break;
+
+                                    case 1:
+                                        Drawable done = getResources().getDrawable(R.drawable.progressbuttondone);
+                                        button1.setBackground(done);
+                                        break;
+                                }
+                            }
+                        })
+                        .show();
+                break;
 
             case R.id.button_progress_2:
-                button2 = findViewById(R.id.button_progress_2);
-                Intent intent2 = new Intent(ProgressActivity.this, EncyActivity.class);
-                intent2.putExtra("trickname", button2.getText().toString());
-                startActivity(intent2);
+                new AlertDialog.Builder(this)
+                        .setIcon(android.R.drawable.ic_dialog_alert)
+                        .setTitle("Выберите действие")
+
+                        .setItems(dialogChoice, new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                switch (which){
+                                    case 0:
+                                        Intent intent2 = new Intent(ProgressActivity.this, EncyActivity.class);
+                                        intent2.putExtra("trickname", button2.getText().toString());
+                                        startActivity(intent2);
+                                        break;
+
+                                    case 1:
+                                        Drawable done = getResources().getDrawable(R.drawable.progressbuttondone);
+                                        button2.setBackground(done);
+                                        break;
+                                }
+                            }
+                        })
+                        .show();
+                break;
 
             case R.id.button_progress_3:
-                button3 = findViewById(R.id.button_progress_3);
-                Intent intent3 = new Intent(ProgressActivity.this, EncyActivity.class);
-                intent3.putExtra("trickname", button3.getText().toString());
-                startActivity(intent3);
+                new AlertDialog.Builder(this)
+                        .setIcon(android.R.drawable.ic_dialog_alert)
+                        .setTitle("Выберите действие")
+
+                        .setItems(dialogChoice, new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                switch (which){
+                                    case 0:
+
+                                        Intent intent3 = new Intent(ProgressActivity.this, EncyActivity.class);
+                                        intent3.putExtra("trickname", button3.getText().toString());
+                                        startActivity(intent3);
+                                        break;
+
+                                    case 1:
+                                        Drawable done = getResources().getDrawable(R.drawable.progressbuttondone);
+                                        button3.setBackground(done);
+                                        break;
+                                }
+                            }
+                        })
+                        .show();
+
+                break;
 
             case R.id.button_progress_4:
-                button4 = findViewById(R.id.button_progress_4);
-                Intent intent4 = new Intent(ProgressActivity.this, EncyActivity.class);
-                intent4.putExtra("trickname", button4.getText().toString());
-                startActivity(intent4);
+                new AlertDialog.Builder(this)
+                        .setIcon(android.R.drawable.ic_dialog_alert)
+                        .setTitle("Выберите действие")
+
+                        .setItems(dialogChoice, new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                switch (which){
+                                    case 0:
+
+                                        Intent intent4 = new Intent(ProgressActivity.this, EncyActivity.class);
+                                        intent4.putExtra("trickname", button4.getText().toString());
+                                        startActivity(intent4);
+                                        break;
+
+                                    case 1:
+                                        Drawable done = getResources().getDrawable(R.drawable.progressbuttondone);
+                                        button4.setBackground(done);
+                                        break;
+                                }
+                            }
+                        })
+                        .show();
+
+                break;
 
             case R.id.button_progress_5:
-                button5 = findViewById(R.id.button_progress_5);
-                Intent intent5 = new Intent(ProgressActivity.this, EncyActivity.class);
-                intent5.putExtra("trickname", button5.getText().toString());
-                startActivity(intent5);
+                new AlertDialog.Builder(this)
+                        .setIcon(android.R.drawable.ic_dialog_alert)
+                        .setTitle("Выберите действие")
+
+                        .setItems(dialogChoice, new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                switch (which){
+                                    case 0:
+
+                                        Intent intent5 = new Intent(ProgressActivity.this, EncyActivity.class);
+                                        intent5.putExtra("trickname", button5.getText().toString());
+                                        startActivity(intent5);
+                                        break;
+
+                                    case 1:
+                                        Drawable done = getResources().getDrawable(R.drawable.progressbuttondone);
+                                        button5.setBackground(done);
+                                        break;
+                                }
+                            }
+                        })
+                        .show();
+
+                break;
 
             case R.id.button_progress_6:
-                button6 = findViewById(R.id.button_progress_6);
-                Intent intent6 = new Intent(ProgressActivity.this, EncyActivity.class);
-                intent6.putExtra("trickname", button6.getText().toString());
-                startActivity(intent6);
+                new AlertDialog.Builder(this)
+                        .setIcon(android.R.drawable.ic_dialog_alert)
+                        .setTitle("Выберите действие")
+
+                        .setItems(dialogChoice, new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                switch (which){
+                                    case 0:
+
+                                        Intent intent6 = new Intent(ProgressActivity.this, EncyActivity.class);
+                                        intent6.putExtra("trickname", button6.getText().toString());
+                                        startActivity(intent6);
+                                        break;
+
+                                    case 1:
+                                        Drawable done = getResources().getDrawable(R.drawable.progressbuttondone);
+                                        button6.setBackground(done);
+                                        break;
+                                }
+                            }
+                        })
+                        .show();
+                break;
 
             case R.id.button_progress_7:
-                button7 = findViewById(R.id.button_progress_7);
-                Intent intent7 = new Intent(ProgressActivity.this, EncyActivity.class);
-                intent7.putExtra("trickname", button7.getText().toString());
-                startActivity(intent7);
+                new AlertDialog.Builder(this)
+                        .setIcon(android.R.drawable.ic_dialog_alert)
+                        .setTitle("Выберите действие")
+
+                        .setItems(dialogChoice, new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                switch (which){
+                                    case 0:
+
+                                        Intent intent7 = new Intent(ProgressActivity.this, EncyActivity.class);
+                                        intent7.putExtra("trickname", button7.getText().toString());
+                                        startActivity(intent7);
+                                        break;
+
+                                    case 1:
+                                        Drawable done = getResources().getDrawable(R.drawable.progressbuttondone);
+                                        button7.setBackground(done);
+                                        break;
+                                }
+                            }
+                        })
+                        .show();
+
+                break;
 
             case R.id.button_progress_8:
-                button8 = findViewById(R.id.button_progress_8);
-                Intent intent8 = new Intent(ProgressActivity.this, EncyActivity.class);
-                intent8.putExtra("trickname", button8.getText().toString());
-                startActivity(intent8);
+                new AlertDialog.Builder(this)
+                        .setIcon(android.R.drawable.ic_dialog_alert)
+                        .setTitle("Выберите действие")
+
+                        .setItems(dialogChoice, new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                switch (which){
+                                    case 0:
+
+                                        Intent intent8 = new Intent(ProgressActivity.this, EncyActivity.class);
+                                        intent8.putExtra("trickname", button8.getText().toString());
+                                        startActivity(intent8);
+                                        break;
+
+                                    case 1:
+                                        Drawable done = getResources().getDrawable(R.drawable.progressbuttondone);
+                                        button8.setBackground(done);
+                                        break;
+                                }
+                            }
+                        })
+                        .show();
+                break;
 
             case R.id.button_progress_9:
-                button9 = findViewById(R.id.button_progress_9);
-                Intent intent9 = new Intent(ProgressActivity.this, EncyActivity.class);
-                intent9.putExtra("trickname", button9.getText().toString());
-                startActivity(intent9);
+                new AlertDialog.Builder(this)
+                        .setIcon(android.R.drawable.ic_dialog_alert)
+                        .setTitle("Выберите действие")
+
+                        .setItems(dialogChoice, new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                switch (which){
+                                    case 0:
+
+                                        Intent intent9 = new Intent(ProgressActivity.this, EncyActivity.class);
+                                        intent9.putExtra("trickname", button9.getText().toString());
+                                        startActivity(intent9);
+                                        break;
+
+                                    case 1:
+                                        Drawable done = getResources().getDrawable(R.drawable.progressbuttondone);
+                                        button9.setBackground(done);
+                                        break;
+                                }
+                            }
+                        })
+                        .show();
+                break;
 
         }
     }

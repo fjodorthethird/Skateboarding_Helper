@@ -18,7 +18,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/toolbar"
-        android:layout_marginLeft="230dp"
+        android:layout_marginLeft="250dp"
         android:layout_marginTop="20dp"
         android:padding="20dp"
         app:ss_animationDuration="600"
